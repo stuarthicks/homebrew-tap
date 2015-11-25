@@ -1,6 +1,5 @@
 class Tstools < Formula
   homepage "https://github.com/stuarthicks/tstools"
-  desc "fork of kynesim/tstools using cmake for easier building on modern osx"
 
   url "https://github.com/stuarthicks/tstools/archive/0.0.2.tar.gz"
   sha256 "bab3ccf5398d64f35c69a7e7611af254bf96e6cb4af741641d89da2ac2327247"
