@@ -2,7 +2,7 @@ class Tstools < Formula
   homepage "https://github.com/stuarthicks/tstools"
 
   url "https://github.com/stuarthicks/tstools/archive/0.0.3.tar.gz"
-  sha256 "bab3ccf5398d64f35c69a7e7611af254bf96e6cb4af741641d89da2ac2327247"
+  sha256 "7f3f080bbbfc96f6da873dd065775fba2f749ca92a5e54760989a4515f74f120"
   version "0.0.3"
 
   depends_on "cmake" => :build
