@@ -5,21 +5,21 @@
 class Rextract < Formula
   desc "Simple shell regex capture extractor"
   homepage "https://github.com/stuarthicks/rextract"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/stuarthicks/rextract/releases/download/v0.0.2/rextract_Darwin_x86_64.tar.gz"
-      sha256 "a574497d1e4b8febe390a0643cdacc6ec8c4d40c0f54ffc308a26535514dbc88"
+      url "https://github.com/stuarthicks/rextract/releases/download/v0.0.3/rextract_Darwin_x86_64.tar.gz"
+      sha256 "fbf6fe462bd568033ab7bde00941e4b0472a403defac9d92889100a1122c81bb"
 
       def install
         bin.install "rextract"
       end
     end
     on_arm do
-      url "https://github.com/stuarthicks/rextract/releases/download/v0.0.2/rextract_Darwin_arm64.tar.gz"
-      sha256 "185bbffe0c8cf2bc73e595fa0208fa5263509296e9af052f89d0df83bbf312b8"
+      url "https://github.com/stuarthicks/rextract/releases/download/v0.0.3/rextract_Darwin_arm64.tar.gz"
+      sha256 "92c7898ffcbd2065add6485e07787a7e4b1170df001ae3c72e98db15a43a8c8e"
 
       def install
         bin.install "rextract"
@@ -30,8 +30,8 @@ class Rextract < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/rextract/releases/download/v0.0.2/rextract_Linux_x86_64.tar.gz"
-        sha256 "ba49417c0c7988b15b90ae7e81f82d6537690286f657d3a4a988c6f89e018b34"
+        url "https://github.com/stuarthicks/rextract/releases/download/v0.0.3/rextract_Linux_x86_64.tar.gz"
+        sha256 "139d03b018208b9d9cd068bf8326420e3dcc7585f96b50bf78b3fd13d9eef632"
 
         def install
           bin.install "rextract"
@@ -40,8 +40,8 @@ class Rextract < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/rextract/releases/download/v0.0.2/rextract_Linux_arm64.tar.gz"
-        sha256 "7e894f80e67456ed08f65a1902a88ab896f56e9d28aab1ecf7e9410b2a235888"
+        url "https://github.com/stuarthicks/rextract/releases/download/v0.0.3/rextract_Linux_arm64.tar.gz"
+        sha256 "93da77c3517c181a0da8d33220293f87051d4980b2a165487b59251abe7029f1"
 
         def install
           bin.install "rextract"
@@ -51,6 +51,6 @@ class Rextract < Formula
   end
 
   test do
-    system "#{bin}/rextract -h
+    system "#{bin}/rextract -h"
   end
 end
