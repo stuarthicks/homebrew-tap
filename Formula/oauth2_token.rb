@@ -5,21 +5,21 @@
 class Oauth2Token < Formula
   desc "Convenience wrapper for getting oauth2 tokens to use with other tools, eg. curl."
   homepage "https://github.com/stuarthicks/oauth2_token"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/stuarthicks/oauth2_token/releases/download/v0.1.0/oauth2_token_Darwin_x86_64.tar.gz"
-      sha256 "05ad5143abe53a30df66770a71f5aaefe1b2957330fbd955df76058b0e9c7ad0"
+      url "https://github.com/stuarthicks/oauth2_token/releases/download/v0.2.0/oauth2_token_Darwin_x86_64.tar.gz"
+      sha256 "144f32c165bcb572f6d4e5386afb54040c1189ca0800e35c288892f1f663fc55"
 
       def install
         bin.install "oauth2_token"
       end
     end
     on_arm do
-      url "https://github.com/stuarthicks/oauth2_token/releases/download/v0.1.0/oauth2_token_Darwin_arm64.tar.gz"
-      sha256 "bbbd395edd0effc82546b34c868d7c386c6ef59248b6d7ca052a71d1f874d56e"
+      url "https://github.com/stuarthicks/oauth2_token/releases/download/v0.2.0/oauth2_token_Darwin_arm64.tar.gz"
+      sha256 "1a256cc19dd553d0c411e2e98ab5a379eb99d8d5ea1cf9a9b2eb98080f4a9651"
 
       def install
         bin.install "oauth2_token"
@@ -30,8 +30,8 @@ class Oauth2Token < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/oauth2_token/releases/download/v0.1.0/oauth2_token_Linux_x86_64.tar.gz"
-        sha256 "1cc862f2a776b2f4494f2aaceccc5858d131c5509519853477e9f4be792bcdf3"
+        url "https://github.com/stuarthicks/oauth2_token/releases/download/v0.2.0/oauth2_token_Linux_x86_64.tar.gz"
+        sha256 "7d68df93081a7c470003869a9c9e008e887c5acfdc445c38773ca47899c289cf"
 
         def install
           bin.install "oauth2_token"
@@ -40,8 +40,8 @@ class Oauth2Token < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/oauth2_token/releases/download/v0.1.0/oauth2_token_Linux_arm64.tar.gz"
-        sha256 "9f8cef336fc1f7a14f6e95d3e212d90a44f28d89b078122a5410eaa694f0e5e1"
+        url "https://github.com/stuarthicks/oauth2_token/releases/download/v0.2.0/oauth2_token_Linux_arm64.tar.gz"
+        sha256 "fd9148e6ffaaa6288e8bfef7adbab1a47537955ae1191ee15e56e4038c52a660"
 
         def install
           bin.install "oauth2_token"
