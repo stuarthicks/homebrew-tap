@@ -5,21 +5,21 @@
 class PresignS3Url < Formula
   desc "Presign S3 URLs"
   homepage "https://github.com/stuarthicks/presign-s3-url"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/stuarthicks/presign-s3-url/releases/download/v0.0.1/presign-s3-url_Darwin_x86_64.tar.gz"
-      sha256 "699a42ef12a5a8c6aa6a7b8d65c53784e649fecf449e04a665f9214d7a835450"
+      url "https://github.com/stuarthicks/presign-s3-url/releases/download/v0.0.2/presign-s3-url_Darwin_x86_64.tar.gz"
+      sha256 "b16d6999b99cace75721a1229f740c2208c2c63905300023e3b248ac8e50a86d"
 
       def install
         bin.install "presign-s3-url"
       end
     end
     on_arm do
-      url "https://github.com/stuarthicks/presign-s3-url/releases/download/v0.0.1/presign-s3-url_Darwin_arm64.tar.gz"
-      sha256 "270e07e84a5e9e07b6e1f17084b4a351fb13736e1121d5e45300b6a482ec2fa6"
+      url "https://github.com/stuarthicks/presign-s3-url/releases/download/v0.0.2/presign-s3-url_Darwin_arm64.tar.gz"
+      sha256 "c3891be49181ef00ecd10349095e8316dd47789e64164510b5caabbd7cd99ae8"
 
       def install
         bin.install "presign-s3-url"
@@ -30,8 +30,8 @@ class PresignS3Url < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/presign-s3-url/releases/download/v0.0.1/presign-s3-url_Linux_x86_64.tar.gz"
-        sha256 "5d47735c6dc1924ab696f4d97ca1efc72aa7ba185e84f7298bb3f65644a90b63"
+        url "https://github.com/stuarthicks/presign-s3-url/releases/download/v0.0.2/presign-s3-url_Linux_x86_64.tar.gz"
+        sha256 "4768802352950aca30ebe446e4df322fa5abd90c20c3b2db012b2137cf7fe1b6"
 
         def install
           bin.install "presign-s3-url"
@@ -40,8 +40,8 @@ class PresignS3Url < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/presign-s3-url/releases/download/v0.0.1/presign-s3-url_Linux_arm64.tar.gz"
-        sha256 "27f16be3093bbba3b90f9f196470b544c595735d0fa5e4e225693a762b1ced54"
+        url "https://github.com/stuarthicks/presign-s3-url/releases/download/v0.0.2/presign-s3-url_Linux_arm64.tar.gz"
+        sha256 "a7aaa5cc10985478c890eac1bc71b27598626c77797e458f8b30d78676f4c82e"
 
         def install
           bin.install "presign-s3-url"
