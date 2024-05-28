@@ -5,21 +5,21 @@
 class TlsCertInfo < Formula
   desc "CLI for viewing basic TLS (SSL) Certificate information"
   homepage "https://github.com/stuarthicks/tls_cert_info"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/stuarthicks/tls_cert_info/releases/download/v0.0.1/tls_cert_info_Darwin_x86_64.tar.gz"
-      sha256 "4acd5d3e78f9ba17f3173fe58cb8e7ff0dfccf706b431469277460b182da0958"
+      url "https://github.com/stuarthicks/tls_cert_info/releases/download/v0.0.2/tls_cert_info_Darwin_x86_64.tar.gz"
+      sha256 "0aa26e4ec9c98fb6949a44302c64b7d9fcf6f45fdce24b73cfaf144037d116ff"
 
       def install
         bin.install "tls_cert_info"
       end
     end
     on_arm do
-      url "https://github.com/stuarthicks/tls_cert_info/releases/download/v0.0.1/tls_cert_info_Darwin_arm64.tar.gz"
-      sha256 "ebe809eae2b561e8974f399101f6772c7b5feee61a1b46392187fe499f4aa251"
+      url "https://github.com/stuarthicks/tls_cert_info/releases/download/v0.0.2/tls_cert_info_Darwin_arm64.tar.gz"
+      sha256 "8846faedd0bcdeae951629f66a7818664832989250f90197e9c3b047d0c60837"
 
       def install
         bin.install "tls_cert_info"
@@ -30,8 +30,8 @@ class TlsCertInfo < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/tls_cert_info/releases/download/v0.0.1/tls_cert_info_Linux_x86_64.tar.gz"
-        sha256 "977dd8f9a1a23d6060f2947cb43fe2f4785d3ba9c822ac53758073bf32246632"
+        url "https://github.com/stuarthicks/tls_cert_info/releases/download/v0.0.2/tls_cert_info_Linux_x86_64.tar.gz"
+        sha256 "216186606519b92bf73eaf5d4fd3405070cd5f8fc3c1e43b48478de21e494c0a"
 
         def install
           bin.install "tls_cert_info"
@@ -40,8 +40,8 @@ class TlsCertInfo < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/tls_cert_info/releases/download/v0.0.1/tls_cert_info_Linux_arm64.tar.gz"
-        sha256 "b7ca2d9cd132d16c23c999669ee5fe77d8220623086403b0e15d514d60357c41"
+        url "https://github.com/stuarthicks/tls_cert_info/releases/download/v0.0.2/tls_cert_info_Linux_arm64.tar.gz"
+        sha256 "690e9b139ea62e3ee8d757e15222567dcc7c6dbd463ae976bf9f4a308f5a8057"
 
         def install
           bin.install "tls_cert_info"
