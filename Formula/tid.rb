@@ -5,21 +5,21 @@
 class Tid < Formula
   desc "Barebones TypeID CLI generator"
   homepage "https://github.com/stuarthicks/tid"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/stuarthicks/tid/releases/download/v0.0.1/tid_Darwin_x86_64.tar.gz"
-      sha256 "e2a437e77b8a3e78ce8ee70d4e8d7e788d61de0a4a9bc86dd65494c508380660"
+      url "https://github.com/stuarthicks/tid/releases/download/v0.0.2/tid_Darwin_x86_64.tar.gz"
+      sha256 "95713553f3c697cbd3e320c73601efaa40ffdbbe9b86fbbf2c88255110fe4d7b"
 
       def install
         bin.install "tid"
       end
     end
     on_arm do
-      url "https://github.com/stuarthicks/tid/releases/download/v0.0.1/tid_Darwin_arm64.tar.gz"
-      sha256 "111efce7927e9895d9d65ba225f1a710e9227ad032e8bd7835b38be9cf7002b3"
+      url "https://github.com/stuarthicks/tid/releases/download/v0.0.2/tid_Darwin_arm64.tar.gz"
+      sha256 "a74237024b48fd5dd24589d204a910d8a14960025cacf5fe0470de1ddda6303b"
 
       def install
         bin.install "tid"
@@ -30,8 +30,8 @@ class Tid < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/tid/releases/download/v0.0.1/tid_Linux_x86_64.tar.gz"
-        sha256 "af7a7ef0676806fecfd12e4bc3d71339eabb87869babc8ce2af9c19dc7ee5d6c"
+        url "https://github.com/stuarthicks/tid/releases/download/v0.0.2/tid_Linux_x86_64.tar.gz"
+        sha256 "291bcf00aa3ba36153119198fd5abde11cf9df0078f33eb520ee3efd9762ca3e"
 
         def install
           bin.install "tid"
@@ -40,8 +40,8 @@ class Tid < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/tid/releases/download/v0.0.1/tid_Linux_arm64.tar.gz"
-        sha256 "ae0d3feae4ccdb3a8e2619b35c45d37979b7bca571301483603d4d771b8a3c50"
+        url "https://github.com/stuarthicks/tid/releases/download/v0.0.2/tid_Linux_arm64.tar.gz"
+        sha256 "b09658bf32d7ae223b4bba0508ddbc0f0b14562f6a3c86ee81d985d224e27e1d"
 
         def install
           bin.install "tid"
