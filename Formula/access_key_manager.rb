@@ -5,21 +5,21 @@
 class AccessKeyManager < Formula
   desc "CLI for rotating AWS Access Keys"
   homepage "https://github.com/stuarthicks/access_key_manager"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
-    on_intel do
-      url "https://github.com/stuarthicks/access_key_manager/releases/download/v0.0.2/access_key_manager_Darwin_x86_64.tar.gz"
-      sha256 "0134794a1d3e4c4c5610a6459961fe8e79f8659b4a12b8cccba806052c033545"
+    if Hardware::CPU.intel?
+      url "https://github.com/stuarthicks/access_key_manager/releases/download/v0.0.3/access_key_manager_Darwin_x86_64.tar.gz"
+      sha256 "551ffded81d1b7b444e161db819f13c0b7672d4a7fda0fca8a1b01aeacb7c8c2"
 
       def install
         bin.install "access_key_manager"
       end
     end
-    on_arm do
-      url "https://github.com/stuarthicks/access_key_manager/releases/download/v0.0.2/access_key_manager_Darwin_arm64.tar.gz"
-      sha256 "7e8f3010d3f76c61ef41faafae6e530a5aa37de23cfed71c0ea9f7c2a0025b2c"
+    if Hardware::CPU.arm?
+      url "https://github.com/stuarthicks/access_key_manager/releases/download/v0.0.3/access_key_manager_Darwin_arm64.tar.gz"
+      sha256 "a14fca2003ed04c9a3cb3a096bd8815af99ba53b7810b45c6d870c8d26eefb1d"
 
       def install
         bin.install "access_key_manager"
@@ -28,20 +28,20 @@ class AccessKeyManager < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/access_key_manager/releases/download/v0.0.2/access_key_manager_Linux_x86_64.tar.gz"
-        sha256 "e1dc46aee1700127330d9a080626f6b65ac39480cd6e7bedbb3392ce30f75bf5"
+        url "https://github.com/stuarthicks/access_key_manager/releases/download/v0.0.3/access_key_manager_Linux_x86_64.tar.gz"
+        sha256 "074e475f8981c3fda592eac06eb3b06eb08a13b44c45dddf149552519ee40523"
 
         def install
           bin.install "access_key_manager"
         end
       end
     end
-    on_arm do
+    if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/access_key_manager/releases/download/v0.0.2/access_key_manager_Linux_arm64.tar.gz"
-        sha256 "d4a7632b4857e87b0976632cd25161903a6b790c0059cadbd86b2b5066b997fc"
+        url "https://github.com/stuarthicks/access_key_manager/releases/download/v0.0.3/access_key_manager_Linux_arm64.tar.gz"
+        sha256 "78bdf41b9701dde5c64ede67813dad658b0369f01dbcd0395f7f025589239b4e"
 
         def install
           bin.install "access_key_manager"
