@@ -5,21 +5,21 @@
 class Mrd < Formula
   desc "Decodes the primordial soup of video DRM headers"
   homepage "https://github.com/stuarthicks/mrd"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stuarthicks/mrd/releases/download/v1.0.0/mrd_Darwin_x86_64.tar.gz"
-      sha256 "9dcaa71102c87c7c3aa159a2990cd1e5c004a19de3257cfd9fd7f9cf55928fbe"
+      url "https://github.com/stuarthicks/mrd/releases/download/v1.0.1/mrd_Darwin_x86_64.tar.gz"
+      sha256 "87420b598c3274546b38af3b7bb46024479f85931b10f50e77cbfda280919b91"
 
       def install
         bin.install "mrd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stuarthicks/mrd/releases/download/v1.0.0/mrd_Darwin_arm64.tar.gz"
-      sha256 "2089c198a02b5090641c5d75cc4be33b35676c1e087ca415827f02da88e645de"
+      url "https://github.com/stuarthicks/mrd/releases/download/v1.0.1/mrd_Darwin_arm64.tar.gz"
+      sha256 "55ce89e38407a5df23663658ad5b61ae67350aa7bf03c352b1fb8b8eec51e9db"
 
       def install
         bin.install "mrd"
@@ -30,8 +30,8 @@ class Mrd < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/mrd/releases/download/v1.0.0/mrd_Linux_x86_64.tar.gz"
-        sha256 "f7b58314df958dcc24ed70211e7decdae4ede09f1a7302b6f7b54b83f8d50890"
+        url "https://github.com/stuarthicks/mrd/releases/download/v1.0.1/mrd_Linux_x86_64.tar.gz"
+        sha256 "60441e17478fd71f721566e7fa9ffb4a73a656788d17d24909e64409f2903eab"
 
         def install
           bin.install "mrd"
@@ -40,8 +40,8 @@ class Mrd < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/mrd/releases/download/v1.0.0/mrd_Linux_arm64.tar.gz"
-        sha256 "c397e6bfabbf8a51470ccc7bd3811acda01c441adf5f5d623aaaa61a3342160b"
+        url "https://github.com/stuarthicks/mrd/releases/download/v1.0.1/mrd_Linux_arm64.tar.gz"
+        sha256 "11f39a1c1fc09a75951f1011e1796bab7636d96348a3e10adb70e640fac548f9"
 
         def install
           bin.install "mrd"
