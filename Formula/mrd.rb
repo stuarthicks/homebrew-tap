@@ -5,21 +5,21 @@
 class Mrd < Formula
   desc "Decodes the primordial soup of video DRM headers"
   homepage "https://github.com/stuarthicks/mrd"
-  version "1.0.3"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stuarthicks/mrd/releases/download/v1.0.3/mrd_Darwin_x86_64.tar.gz"
-      sha256 "4963b5bf217c483c8c45fd710a02144ad019d79d93e3073e36b9365615832f9d"
+      url "https://github.com/stuarthicks/mrd/releases/download/v1.1.0/mrd_Darwin_x86_64.tar.gz"
+      sha256 "b511c56dba6d6bdadd24b22c62780a598c2dab7ef80a7c8de2ca973cd6e285c6"
 
       def install
         bin.install "mrd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stuarthicks/mrd/releases/download/v1.0.3/mrd_Darwin_arm64.tar.gz"
-      sha256 "447da01d7004b87025ace2146eac720df040bef9f901184e9461d6ff10dad430"
+      url "https://github.com/stuarthicks/mrd/releases/download/v1.1.0/mrd_Darwin_arm64.tar.gz"
+      sha256 "b65c2608f212731908b4504c3049126f399931bd016979137bf4a2195629b68c"
 
       def install
         bin.install "mrd"
@@ -28,24 +28,18 @@ class Mrd < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/mrd/releases/download/v1.0.3/mrd_Linux_x86_64.tar.gz"
-        sha256 "fbc22f3236d20f74447280a16593785465f7cc2f2be550af18b7e108ce4c6005"
-
-        def install
-          bin.install "mrd"
-        end
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/stuarthicks/mrd/releases/download/v1.1.0/mrd_Linux_x86_64.tar.gz"
+      sha256 "9e5e475866c601b052fe49aa7d6fe78fe1cabb35430944816d53b66197fadadf"
+      def install
+        bin.install "mrd"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/stuarthicks/mrd/releases/download/v1.0.3/mrd_Linux_arm64.tar.gz"
-        sha256 "357e1c0ec18c9c9f0dc041ef4874efd01233ae279e1109a654736628de8867df"
-
-        def install
-          bin.install "mrd"
-        end
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/stuarthicks/mrd/releases/download/v1.1.0/mrd_Linux_arm64.tar.gz"
+      sha256 "85dd789326c04d2525520ffe749ee20fb4a95d8637deba280c87c8e25a5f0a42"
+      def install
+        bin.install "mrd"
       end
     end
   end
